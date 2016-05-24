@@ -24,6 +24,10 @@ t.describe('App', function() {
       t.e(element(by.css('sd-app sd-navbar nav a:last-child')).getText()).toEqual('About');
   });
 
+  t.it('should have correct nav text for Test', function() {
+      t.e(element(by.css('sd-app sd-navbar nav a:last-child')).getText()).toEqual('Test');
+  });
+  
   t.it('should contain a language switcher', function() {
     t.e(element(by.css('sd-app sd-toolbar lang-switcher')).isPresent()).toEqual(true);
     t.e(element.all(by.css('sd-app sd-toolbar lang-switcher option')).count()).toEqual(5);

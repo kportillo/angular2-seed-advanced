@@ -11,6 +11,7 @@ import {NavbarComponent} from './navbar.component';
 import {ToolbarComponent} from './toolbar.component';
 import {HomeComponent} from '../home/home.component';
 import {AboutComponent} from '../about/about.component';
+import {TestComponent} from '../test/test.component';
 
 @RouteComponent({
   selector: 'sd-app',
@@ -29,6 +30,11 @@ import {AboutComponent} from '../about/about.component';
     path: '/about',
     component: AboutComponent,
     name: 'About'
+  },
+  {
+    path: '/about',
+    component: TestComponent,
+    name: 'Test'
   }
 ])
 export class AppComponent {

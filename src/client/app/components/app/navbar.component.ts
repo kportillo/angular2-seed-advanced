@@ -25,10 +25,17 @@ export class NavbarComponent {
           case '':
             this.activeLink.home = true;
             this.activeLink.about = false;
+            this.activeLink.test = false;
             break;
           case '/about':
             this.activeLink.home = false;
             this.activeLink.about = true;
+            this.activeLink.test = false;
+            break;
+          case '/test':
+            this.activeLink.home = false;
+            this.activeLink.about = false;
+            this.activeLink.test = true;
             break;
         }
       }
