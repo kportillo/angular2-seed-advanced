@@ -32,7 +32,7 @@ import {TestComponent} from '../test/test.component';
     name: 'About'
   },
   {
-    path: '/about',
+    path: '/test',
     component: TestComponent,
     name: 'Test'
   }
